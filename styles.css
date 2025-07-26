@@ -1,1 +1,16 @@
+// Year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
 
+// Copy buttons
+document.querySelectorAll('[data-copy]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const selector = btn.getAttribute('data-copy');
+    const codeEl = document.querySelector(selector);
+    const text = codeEl ? codeEl.innerText : '';
+    navigator.clipboard.writeText(text).then(() => {
+      const old = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => (btn.textContent = old), 1500);
+    });
+  });
+});
