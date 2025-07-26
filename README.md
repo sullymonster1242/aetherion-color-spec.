@@ -1,4 +1,6 @@
-
+index.html
+styles.css
+script.js
 [![DOI](https://zenodo.org/badge/1026575107.svg)](https://doi.org/10.5281/zenodo.16437962)
 
 # Aetherion™ v1.0
