@@ -1,1 +1,116 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aetherion™ — Velkrune</title>
+  <meta name="description" content="Aetherion™ — the official Velkrune color specification. Pronounced 'a-ther-oin'." />
+  <link rel="stylesheet" href="tokens/css-vars.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Aetherion<span class="tm">™</span></h1>
+    <p class="tagline">Pronounced “a-ther-oin”. A Velkrune<span class="tm">™</span> color.</p>
+    <div class="swatch-main" style="--swatch: var(--color-aetherion);"></div>
+    <div class="meta">
+      <code>#7F00C6</code> · CIE Lab (D65/2°): L* 35.18, a* +71.45, b* –70.14 · ΔE00 ≤ 1.0 (digital)
+    </div>
+    <a class="btn" href="https://github.com/<YOUR-USERNAME>/aetherion-color-spec" target="_blank" rel="noopener">View Spec on GitHub</a>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>Swatches (UI scale)</h2>
+      <div class="swatches">
+        <div class="swatch" data-name="50"  style="--swatch: var(--color-aetherion-50);">50</div>
+        <div class="swatch" data-name="100" style="--swatch: var(--color-aetherion-100);">100</div>
+        <div class="swatch" data-name="200" style="--swatch: var(--color-aetherion-200);">200</div>
+        <div class="swatch" data-name="300" style="--swatch: var(--color-aetherion-300);">300</div>
+        <div class="swatch" data-name="400" style="--swatch: var(--color-aetherion-400);">400</div>
+        <div class="swatch" data-name="500" style="--swatch: var(--color-aetherion-500);">500 (canonical)</div>
+        <div class="swatch" data-name="600" style="--swatch: var(--color-aetherion-600);">600</div>
+        <div class="swatch" data-name="700" style="--swatch: var(--color-aetherion-700);">700</div>
+        <div class="swatch" data-name="800" style="--swatch: var(--color-aetherion-800);">800</div>
+        <div class="swatch" data-name="900" style="--swatch: var(--color-aetherion-900);">900</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Copy & Paste: CSS Variables</h2>
+      <p>Drop this into your CSS (or just link to <code>tokens/css-vars.css</code>):</p>
+      <pre><code id="css-vars-code">/* From tokens/css-vars.css */
+:root {
+  --color-aetherion: #7f00c6;
+  --color-aetherion-50:  #f3eaff;
+  --color-aetherion-100: #ead1ff;
+  --color-aetherion-200: #d6a3ff;
+  --color-aetherion-300: #bf71ff;
+  --color-aetherion-400: #a645f7;
+  --color-aetherion-500: #7f00c6; /* canonical */
+  --color-aetherion-600: #6e00ad;
+  --color-aetherion-700: #58008d;
+  --color-aetherion-800: #420068;
+  --color-aetherion-900: #2d0046;
+}
+</code></pre>
+      <button class="btn small" data-copy="#css-vars-code">Copy</button>
+    </section>
+
+    <section>
+      <h2>Tailwind Config Snippet</h2>
+      <pre><code id="tailwind-code">module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        aetherion: {
+          50:  '#f3eaff',
+          100: '#ead1ff',
+          200: '#d6a3ff',
+          300: '#bf71ff',
+          400: '#a645f7',
+          500: '#7f00c6',
+          600: '#6e00ad',
+          700: '#58008d',
+          800: '#420068',
+          900: '#2d0046'
+        }
+      }
+    }
+  }
+}
+</code></pre>
+      <button class="btn small" data-copy="#tailwind-code">Copy</button>
+    </section>
+
+    <section>
+      <h2>Gradients</h2>
+      <div class="gradients">
+        <div class="gradient" style="--g: linear-gradient(135deg, var(--color-aetherion-400), var(--color-aetherion));"></div>
+        <div class="gradient" style="--g: linear-gradient(135deg, #7F00C6, #3E2CFF, #FF2DD4);"></div>
+      </div>
+      <p class="note">The second gradient hints at the iridescent feel (not truly angle-dependent).</p>
+    </section>
+
+    <section>
+      <h2>Iridescent Spec (Multi-Angle)</h2>
+      <p>The landing page shows the solid digital color. For **physical or shader-based iridescence**, see the <code>iridescent/</code> folder in the repo for the multi-angle measurement template and shader guidance.</p>
+    </section>
+
+    <section>
+      <h2>Trademark & License</h2>
+      <p>
+        Aetherion<span class="tm">™</span> is a trademark of Velkrune<span class="tm">™</span>.<br />
+        Numeric definitions & docs: CC0. Code: MIT. Name: trademarked—see <code>LEGAL/TRADEMARK.md</code>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Velkrune™ · Aetherion™
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
