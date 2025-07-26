@@ -1,0 +1,14 @@
+:root {
+  --color-aetherion: #7f00c6;
+
+  --color-aetherion-50:  #f3eaff;
+  --color-aetherion-100: #ead1ff;
+  --color-aetherion-200: #d6a3ff;
+  --color-aetherion-300: #bf71ff;
+  --color-aetherion-400: #a645f7;
+  --color-aetherion-500: #7f00c6; /* canonical */
+  --color-aetherion-600: #6e00ad;
+  --color-aetherion-700: #58008d;
+  --color-aetherion-800: #420068;
+  --color-aetherion-900: #2d0046;
+}
